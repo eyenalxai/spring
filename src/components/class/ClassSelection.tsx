@@ -1,5 +1,5 @@
 import {ClassButton} from "./ClassButton";
-import {ClassShape, getRandomFakeClassNames, getRandomRealClassName, shuffleStringArray} from "../../util/Stuff";
+import {ClassShape, getRandomFakeClassNames, getRandomRealClassName, shuffleArray} from "../../util/Stuff";
 import {useEffect, useState} from "react";
 import {RestartButton} from "../RestartButton";
 
@@ -11,7 +11,7 @@ export function ClassSelection() {
         if (!selected) {
             const realClassName = getRandomRealClassName()
             const fakeClassNames = getRandomFakeClassNames(4)
-            setShuffledArray(shuffleStringArray([...fakeClassNames, realClassName]));
+            setShuffledArray(shuffleArray([...fakeClassNames, realClassName]));
         }
     }, [selected])
 
