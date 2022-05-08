@@ -1,8 +1,12 @@
+import {Classes} from "./components/Classes";
+
+
 export function App() {
 
+
     return (
-        <div>
-            <h1>Hello</h1>
+        <div className={"h-screen bg-gray-200"}>
+            <Classes/>
         </div>
     )
 }
