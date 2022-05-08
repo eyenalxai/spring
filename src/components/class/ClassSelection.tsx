@@ -1,11 +1,11 @@
 import {ClassButton} from "./ClassButton";
-import {ClassSHape, getRandomFakeClassNames, getRandomRealClassName, shuffleStringArray} from "../../util/Stuff";
+import {ClassShape, getRandomFakeClassNames, getRandomRealClassName, shuffleStringArray} from "../../util/Stuff";
 import {useEffect, useState} from "react";
 import {RestartButton} from "../RestartButton";
 
 export function ClassSelection() {
     const [selected, setIsSelected] = useState<boolean>(false)
-    const [shuffledArray, setShuffledArray] = useState<ClassSHape[] | undefined>(undefined)
+    const [shuffledArray, setShuffledArray] = useState<ClassShape[] | undefined>(undefined)
 
     useEffect(() => {
         if (!selected) {
