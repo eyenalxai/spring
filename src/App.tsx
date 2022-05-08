@@ -1,12 +1,12 @@
-import {Classes} from "./components/Classes";
-
+import {ClassSelection} from "./components/class/ClassSelection";
+import {Container} from "./components/Container";
+import {Header} from "./components/Header";
 
 export function App() {
-
-
     return (
-        <div className={"h-screen bg-gray-200"}>
-            <Classes/>
-        </div>
+        <Container>
+            <Header/>
+            <ClassSelection/>
+        </Container>
     )
 }
