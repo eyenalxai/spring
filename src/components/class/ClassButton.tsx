@@ -18,7 +18,7 @@ export function ClassButton({className, isReal, selected, setIsSelected}: ClassB
         <button
             onClick={() => setIsSelected(true)}
             className={
-                `text-left text-sm md:text-lg pt-2 pb-2.5 px-2 rounded 
+                `text-left text-sm md:text-lg p-2 rounded 
                 transition-colors duration-300 ${style(isReal, selected)}`
             }>
             {className}
