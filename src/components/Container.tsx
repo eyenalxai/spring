@@ -6,7 +6,7 @@ interface ContainerProps {
 
 export function Container({children}: ContainerProps) {
     return (
-        <div className={"h-screen w-screen bg-gray-200"}>
+        <div className={"h-screen w-screen bg-gray-200 dark:bg-gray-800"}>
             <div className={"container flex justify-center"}>
                 <div className={"flex flex-col justify-start w-96 mt-12"}>
                     {children}
